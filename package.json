@@ -1,0 +1,15 @@
+{
+  "name": "tooring",
+  "version": "0.1.0",
+  "description": "Theory of computation you can play with: automata, grammars, parsers, Turing machines, computability and complexity, animated.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node tools/check-topics.mjs",
+    "diagrams": "node tools/check-diagrams.mjs",
+    "e2e": "node tests/e2e/run.mjs"
+  },
+  "author": "Jyotiprakash Mishra <mail@jyotiprakash.org>",
+  "license": "GPL-3.0-or-later"
+}
