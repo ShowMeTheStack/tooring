@@ -1,0 +1,19 @@
+/* Foundations topics: one colour per class of an equivalence (kc0..kc5), on states, cells and tokens, and
+   dominoes that have fallen or still stand. Colours come from the theme's palette, so both themes work. */
+.it-state.kc0 .st-shape, .it-cell.kc0 .cell-box { fill: color-mix(in srgb, var(--c1) 18%, var(--node)); stroke: var(--c1); stroke-width: 2.6; }
+.it-state.kc1 .st-shape, .it-cell.kc1 .cell-box { fill: color-mix(in srgb, var(--c2) 18%, var(--node)); stroke: var(--c2); stroke-width: 2.6; }
+.it-state.kc2 .st-shape, .it-cell.kc2 .cell-box { fill: color-mix(in srgb, var(--c0) 20%, var(--node)); stroke: var(--c0); stroke-width: 2.6; }
+.it-state.kc3 .st-shape, .it-cell.kc3 .cell-box { fill: color-mix(in srgb, var(--c4) 18%, var(--node)); stroke: var(--c4); stroke-width: 2.6; }
+.it-state.kc4 .st-shape, .it-cell.kc4 .cell-box { fill: color-mix(in srgb, var(--c3) 16%, var(--node)); stroke: var(--c3); stroke-width: 2.6; }
+.it-state.kc5 .st-shape, .it-cell.kc5 .cell-box { fill: color-mix(in srgb, var(--c5) 18%, var(--node)); stroke: var(--c5); stroke-width: 2.6; }
+.it-cell.one .cell-text { font-weight: 750; }
+.it-cell.domino .cell-box { fill: var(--surface2); stroke: var(--node-line); stroke-width: 2; rx: 5; }
+.it-cell.domino.fallen .cell-box { fill: var(--good-soft); stroke: var(--good); }
+.it-cell.domino.stuck .cell-box { fill: var(--bad-soft); stroke: var(--bad); stroke-width: 2.6; }
+.it-cell.domino.next .cell-box { stroke: var(--hot); stroke-width: 3; }
+.it-cell.pigeon .cell-box { fill: color-mix(in srgb, var(--c1) 16%, var(--node)); stroke: var(--c1); rx: 14; }
+.it-cell.pigeon.bad .cell-box { fill: var(--bad-soft); stroke: var(--bad); stroke-width: 3; }
+.it-cell.guest .cell-box { fill: color-mix(in srgb, var(--c1) 16%, var(--node)); stroke: var(--c1); rx: 12; }
+.it-cell.guest.new .cell-box { fill: var(--hot-soft); stroke: var(--hot); }
+.it-cell.room .cell-box { fill: var(--surface2); stroke: var(--node-line); }
+.it-cell.room.free .cell-box { fill: var(--good-soft); stroke: var(--good); stroke-width: 2.6; }
