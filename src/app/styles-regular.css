@@ -1,0 +1,26 @@
+/* Part 2 (regular languages): one colour per block of a partition or class of strings (rk0..rk7), on
+   states, cells, regions and tokens; colours come from the theme's palette so both themes work. */
+.it-state.rk0 .st-shape, .it-cell.rk0 .cell-box { fill: color-mix(in srgb, var(--c1) 18%, var(--node)); stroke: var(--c1); stroke-width: 2.6; }
+.it-state.rk1 .st-shape, .it-cell.rk1 .cell-box { fill: color-mix(in srgb, var(--c2) 18%, var(--node)); stroke: var(--c2); stroke-width: 2.6; }
+.it-state.rk2 .st-shape, .it-cell.rk2 .cell-box { fill: color-mix(in srgb, var(--c0) 20%, var(--node)); stroke: var(--c0); stroke-width: 2.6; }
+.it-state.rk3 .st-shape, .it-cell.rk3 .cell-box { fill: color-mix(in srgb, var(--c4) 18%, var(--node)); stroke: var(--c4); stroke-width: 2.6; }
+.it-state.rk4 .st-shape, .it-cell.rk4 .cell-box { fill: color-mix(in srgb, var(--c3) 16%, var(--node)); stroke: var(--c3); stroke-width: 2.6; }
+.it-state.rk5 .st-shape, .it-cell.rk5 .cell-box { fill: color-mix(in srgb, var(--c5) 18%, var(--node)); stroke: var(--c5); stroke-width: 2.6; }
+.it-state.rk6 .st-shape, .it-cell.rk6 .cell-box { fill: color-mix(in srgb, var(--c6) 20%, var(--node)); stroke: var(--c6); stroke-width: 2.6; }
+.it-state.rk7 .st-shape, .it-cell.rk7 .cell-box { fill: color-mix(in srgb, var(--c7) 20%, var(--node)); stroke: var(--c7); stroke-width: 2.6; }
+.it-region.rk0 .region-box { fill: color-mix(in srgb, var(--c1) 8%, var(--st-bg)); stroke: var(--c1); stroke-width: 2; }
+.it-region.rk1 .region-box { fill: color-mix(in srgb, var(--c2) 8%, var(--st-bg)); stroke: var(--c2); stroke-width: 2; }
+.it-region.rk2 .region-box { fill: color-mix(in srgb, var(--c0) 9%, var(--st-bg)); stroke: var(--c0); stroke-width: 2; }
+.it-region.rk3 .region-box { fill: color-mix(in srgb, var(--c4) 8%, var(--st-bg)); stroke: var(--c4); stroke-width: 2; }
+.it-region.rk4 .region-box { fill: color-mix(in srgb, var(--c3) 8%, var(--st-bg)); stroke: var(--c3); stroke-width: 2; }
+.it-region.rk5 .region-box { fill: color-mix(in srgb, var(--c5) 8%, var(--st-bg)); stroke: var(--c5); stroke-width: 2; }
+.it-region.rk6 .region-box { fill: color-mix(in srgb, var(--c6) 9%, var(--st-bg)); stroke: var(--c6); stroke-width: 2; }
+.it-region.rk7 .region-box { fill: color-mix(in srgb, var(--c7) 9%, var(--st-bg)); stroke: var(--c7); stroke-width: 2; }
+.it-region.rk-hot .region-box { stroke-width: 3.4; stroke-dasharray: 7 4; }
+.it-token.rk0 .token-dot { fill: var(--c1); } .it-token.rk1 .token-dot { fill: var(--c2); } .it-token.rk2 .token-dot { fill: var(--c0); } .it-token.rk3 .token-dot { fill: var(--c4); }
+.it-token.rk4 .token-dot { fill: var(--c3); } .it-token.rk5 .token-dot { fill: var(--c5); } .it-token.rk6 .token-dot { fill: var(--c6); } .it-token.rk7 .token-dot { fill: var(--c7); }
+/* a mark in the minimisation table, and the pair that is being decided */
+.it-cell.rmark .cell-text { fill: var(--bad); font-weight: 800; }
+.it-cell.rsame .cell-box { fill: var(--good-soft); stroke: var(--good); stroke-width: 2.4; }
+.it-line.rmatch .plain-line { stroke: var(--part-b); stroke-width: 2.2; stroke-dasharray: 5 4; }
+.it-line.rmatch.bad .plain-line { stroke: var(--bad); }
