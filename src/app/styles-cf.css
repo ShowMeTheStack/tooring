@@ -1,0 +1,33 @@
+/* ---- context-free topics (part 3): symbols, rule chips, tree parts. Every rule is scoped to .cf, the class
+   those topics put on each of their stage items, so nothing here touches other pictures. ---- */
+.it.cf.it-cell.nt .cell-text { fill: var(--k-nt); font-weight: 700; }
+.it.cf.it-cell.t .cell-text { fill: var(--k-t); }
+.it.cf.it-cell.read.nt .cell-text, .it.cf.it-cell.read.t .cell-text { fill: var(--muted); }
+.it.cf.it-cell.chip .cell-box { rx: 10; }
+.it.cf.it-cell.lhs .cell-box { fill: color-mix(in srgb, var(--k-nt) 10%, var(--node)); stroke: color-mix(in srgb, var(--k-nt) 55%, var(--node-line)); }
+.it.cf.it-cell.status .cell-box { fill: var(--surface2); stroke: var(--border); }
+.it.cf.it-cell.status.good .cell-text { fill: var(--good); font-weight: 750; }
+.it.cf.it-cell.status.bad .cell-text { fill: var(--bad); font-weight: 750; }
+.it.cf.it-cell.new .cell-box { fill: var(--good-soft); stroke: var(--good); stroke-width: 2.6; }
+.it.cf.it-cell.drop .cell-box { fill: var(--bad-soft); stroke: var(--bad); stroke-width: 2.4; stroke-dasharray: 6 4; }
+.it.cf.it-cell.drop .cell-text { fill: var(--bad); text-decoration: line-through; }
+.it.cf.it-cell.gone .cell-text { text-decoration: line-through; }
+.it.cf.it-cell.lead-t .cell-box { stroke: var(--good); }
+.it.cf.it-cell.lead-n .cell-box { stroke: var(--hot); stroke-dasharray: 5 3; }
+.it.cf.it-cell.stage .cell-text { font-size: 13px; font-weight: 750; letter-spacing: 0.04em; }
+.it.cf.it-cell.stage.done .cell-box { fill: var(--good-soft); stroke: var(--good); }
+.it.cf.it-cell.part-v .cell-box { fill: var(--hot-soft); stroke: var(--hot); }
+.it.cf.it-cell.part-xx .cell-box { fill: var(--part-b-soft); stroke: var(--part-b); }
+.it.cf.it-state.nt .st-text { fill: var(--k-nt); }
+.it.cf.it-state.t .st-shape { fill: var(--surface2); }
+.it.cf.it-state.t .st-text { font-family: var(--mono); fill: var(--k-t); }
+.it.cf.it-state.eps .st-text { fill: var(--k-eps); font-style: italic; }
+.it.cf.it-state.pv .st-shape { fill: var(--hot-soft); stroke: var(--hot); stroke-width: 2.6; }
+.it.cf.it-state.px .st-shape { fill: var(--part-b-soft); stroke: var(--part-b); stroke-width: 2.6; }
+.it.cf.it-state.diff .st-shape { stroke: var(--bad); stroke-width: 3.2; fill: var(--bad-soft); }
+.it.cf.it-state.alive .st-shape { stroke: var(--act); stroke-width: 2.6; }
+.it.cf.it-state.conf .st-text { font-family: var(--mono); font-size: 14px; }
+.it.cf.it-state.hot.nt .st-text, .it.cf.it-state.hot.t .st-text { fill: var(--hot-deep); }
+.it.cf.it-token.lm .token-dot { fill: var(--hot); } .it.cf.it-token.rm .token-dot { fill: var(--part-b); }
+.it.cf.it-token.rm .token-text { fill: #fff; }
+.it.cf.it-token.lm .token-text, .it.cf.it-token.rm .token-text { font-size: 13px; }
