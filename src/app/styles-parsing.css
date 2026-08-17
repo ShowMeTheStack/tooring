@@ -1,0 +1,42 @@
+/* Part 4, parsing: symbols coloured as in the grammar panel, rows of item and chart panels, kinds of steps */
+.it-state.tnode.nt .st-text { fill: var(--k-nt); font-weight: 750; }
+.it-state.tnode.term .st-text { fill: var(--k-t); }
+.it-state.tnode.eps .st-text { fill: var(--k-eps); font-style: italic; }
+.it-state.tnode.pending { opacity: 0.45; }
+.it-state.tnode.pending .st-shape { stroke-dasharray: 4 4; }
+.it-state.tnode.hot .st-text { fill: var(--text); }
+.it-cell.prow .cell-box { fill: var(--node); stroke: var(--border); stroke-width: 1.2; }
+.it-cell.prow.kernel .cell-box { fill: var(--surface2); stroke: var(--node-line); }
+.it-cell.prow.hot .cell-box { fill: var(--hot-soft); stroke: var(--hot); stroke-width: 2.6; }
+.it-cell.prow.act .cell-box { fill: var(--act-soft); stroke: var(--act); stroke-width: 2.4; }
+.it-cell.prow.good .cell-box { fill: var(--good-soft); stroke: var(--good); stroke-width: 2.4; }
+.it-cell.prow.bad .cell-box { fill: var(--bad-soft); stroke: var(--bad); stroke-width: 2.4; }
+.it-cell.prow.src-a .cell-box { fill: var(--part-b-soft); stroke: var(--part-b); stroke-width: 2.4; }
+.it-cell.prow.src-b .cell-box { fill: color-mix(in srgb, var(--c5) 16%, var(--node)); stroke: var(--c5); stroke-width: 2.4; }
+.it-cell.prow.faint .cell-text { fill: var(--muted); }
+.it-cell.prow.tag .cell-box { fill: var(--surface2); stroke: none; }
+.it-cell.prow.tag .cell-text { fill: var(--muted); font-weight: 650; }
+.it-cell.endmark .cell-text { fill: var(--muted); }
+.it-cell.pend .cell-text { fill: var(--muted); }
+.it-cell.pend .cell-box { stroke-dasharray: 4 4; }
+.it-edge.predict .edge-path { stroke: var(--c1); stroke-width: 2.2; stroke-dasharray: 6 4; }
+.it-edge.scan .edge-path { stroke: var(--hot); stroke-width: 2.6; }
+.it-edge.complete .edge-path { stroke: var(--good); stroke-width: 2.6; }
+.it-text.nt .free-text { fill: var(--k-nt); font-weight: 750; }
+.it-text.term .free-text { fill: var(--k-t); font-family: var(--mono); font-weight: 700; }
+.it-bracket.sa .bracket-path { stroke: var(--part-b); } .it-bracket.sa .bracket-text { fill: var(--part-b); font-weight: 700; }
+.it-bracket.sb .bracket-path { stroke: var(--c5); } .it-bracket.sb .bracket-text { fill: var(--c5); font-weight: 700; }
+.it-region.bad .region-box { stroke: var(--bad); stroke-width: 3; }
+.it-region.good .region-box { stroke: var(--good); stroke-width: 3; }
+.it-cell.chip .cell-box { fill: var(--surface2); stroke: var(--node-line); }
+.it-cell.chip .cell-text { fill: var(--k-t); font-weight: 700; }
+.it-cell.chip.eps .cell-text { fill: var(--k-eps); font-style: italic; }
+.it-cell.chip.hot .cell-box { fill: var(--hot-soft); stroke: var(--hot); stroke-width: 3; }
+.it-cell.chip.act .cell-box { fill: var(--act-soft); stroke: var(--act); stroke-width: 2.4; }
+.it-cell.faint { opacity: 0.55; }
+.it-state.grpc0 .st-shape { fill: color-mix(in srgb, var(--c0) 22%, var(--node)); }
+.it-state.grpc1 .st-shape { fill: color-mix(in srgb, var(--c1) 22%, var(--node)); }
+.it-state.grpc2 .st-shape { fill: color-mix(in srgb, var(--c2) 22%, var(--node)); }
+.it-state.grpc3 .st-shape { fill: color-mix(in srgb, var(--c4) 22%, var(--node)); }
+.it-state.grpc4 .st-shape { fill: color-mix(in srgb, var(--c5) 22%, var(--node)); }
+.it-state.grpc5 .st-shape { fill: color-mix(in srgb, var(--c6) 22%, var(--node)); }
