@@ -1,0 +1,58 @@
+/* Part 5 topics (Turing machines and other models). Every class starts tu- so nothing clashes.
+   tu-k1..tu-k6: one colour per round of crossing off (or per tape, per field of a code); colours come from
+   the theme's palette, so both themes work. */
+.it-cell.tu-k1 .cell-box, .it-state.tu-k1 .st-shape { fill: color-mix(in srgb, var(--c1) 18%, var(--node)); stroke: var(--c1); stroke-width: 2.4; }
+.it-cell.tu-k2 .cell-box, .it-state.tu-k2 .st-shape { fill: color-mix(in srgb, var(--c2) 18%, var(--node)); stroke: var(--c2); stroke-width: 2.4; }
+.it-cell.tu-k3 .cell-box, .it-state.tu-k3 .st-shape { fill: color-mix(in srgb, var(--c0) 22%, var(--node)); stroke: var(--c0); stroke-width: 2.4; }
+.it-cell.tu-k4 .cell-box, .it-state.tu-k4 .st-shape { fill: color-mix(in srgb, var(--c4) 18%, var(--node)); stroke: var(--c4); stroke-width: 2.4; }
+.it-cell.tu-k5 .cell-box, .it-state.tu-k5 .st-shape { fill: color-mix(in srgb, var(--c3) 16%, var(--node)); stroke: var(--c3); stroke-width: 2.4; }
+.it-cell.tu-k6 .cell-box, .it-state.tu-k6 .st-shape { fill: color-mix(in srgb, var(--c5) 18%, var(--node)); stroke: var(--c5); stroke-width: 2.4; }
+/* the walls of a linear-bounded tape and the left end of a one-way tape */
+.it-cell.tu-wall .cell-box { fill: var(--surface3); stroke: var(--text); stroke-width: 3.2; }
+.it-cell.tu-wall .cell-text { font-weight: 800; }
+/* a state chip inside a configuration, and a cell the step just wrote */
+.it-cell.tu-q .cell-box { fill: var(--act); stroke: var(--act); }
+.it-cell.tu-q .cell-text { fill: #fff; font-weight: 750; font-size: 14px; }
+:root[data-theme="dark"] .it-cell.tu-q .cell-text { fill: #0e1120; }
+.it-cell.tu-q.good .cell-box { fill: var(--good); stroke: var(--good); }
+.it-cell.tu-q.bad .cell-box { fill: var(--bad); stroke: var(--bad); }
+.it-cell.tu-new .cell-box { fill: var(--hot-soft); stroke: var(--hot); stroke-width: 2.6; }
+.it-cell.tu-gone .cell-box { fill: var(--surface2); stroke-dasharray: 4 3; }
+.it-cell.tu-gone .cell-text { fill: var(--muted); }
+/* small cells: bits of a code, digits of an address */
+.it-cell.tu-bit .cell-text { font-size: 13px; font-family: var(--mono); }
+.it-cell.tu-bit .cell-box { stroke-width: 1; }
+/* a program listing: the line being run, and code text */
+.it-region.tu-line .region-box { fill: var(--hot-soft); stroke: var(--hot); stroke-width: 2; }
+.it-region.tu-done .region-box { fill: var(--good-soft); stroke: var(--good); stroke-width: 2; }
+.it-region.tu-fail .region-box { fill: var(--bad-soft); stroke: var(--bad); stroke-width: 2; }
+.it-region.tu-soft .region-box { fill: var(--surface2); stroke: var(--border); }
+.it-region.tu-box .region-box { fill: color-mix(in srgb, var(--c1) 6%, var(--st-bg)); stroke: color-mix(in srgb, var(--c1) 50%, transparent); stroke-width: 1.6; }
+.it-region.tu-box2 .region-box { fill: color-mix(in srgb, var(--c2) 6%, var(--st-bg)); stroke: color-mix(in srgb, var(--c2) 50%, transparent); stroke-width: 1.6; }
+.it-region.tu-box.hot .region-box, .it-region.tu-box2.hot .region-box { stroke: var(--hot); stroke-width: 3; }
+.it-text.tu-code .free-text { font: 600 14px var(--mono); fill: var(--text); }
+.it-text.tu-num .free-text { font: 500 12px var(--mono); fill: var(--muted); }
+.it-text.tu-small .free-text { font-size: 12px; }
+.it-text.tu-huge .free-text { font: 800 26px var(--font); fill: var(--text); }
+/* model cards in the gallery */
+.it-state.tu-card .st-shape { fill: var(--surface); stroke: var(--node-line); rx: 14; }
+.it-state.tu-card .st-text { font-size: 14px; }
+.it-state.tu-card.hot .st-shape { fill: var(--hot-soft); stroke: var(--hot); stroke-width: 3; }
+.it-state.tu-card.good .st-shape { fill: var(--good-soft); stroke: var(--good); stroke-width: 3; }
+.it-state.tu-chip .st-text { font: 650 13px var(--mono); }
+/* trails: where a head has been */
+.it-line.tu-trail .plain-line { stroke: var(--act); stroke-width: 2.4; opacity: 0.75; }
+.it-line.tu-trail.old .plain-line { opacity: 0.35; }
+.it-line.tu-path .plain-line { stroke: var(--hot); stroke-width: 3; }
+.it-line.tu-wall .plain-line { stroke: var(--text); stroke-width: 3.5; }
+.it-token.tu-dot .token-dot { fill: var(--act); }
+.it-token.tu-pebble .token-dot { fill: var(--c1); stroke: var(--surface); }
+.it-token.tu-pebble2 .token-dot { fill: var(--c2); stroke: var(--surface); }
+.it-token.tu-choice .token-dot { fill: var(--surface); stroke: var(--node-line); stroke-width: 1.5; }
+.it-token.tu-choice .token-text { fill: var(--text); font-size: 11px; }
+.it-token.tu-choice.hot .token-dot { fill: var(--hot); stroke: var(--hot); }
+.it-token.tu-choice.hot .token-text { fill: #1b1300; }
+/* a several-line text input (kind: 'program') */
+textarea.prog-text { font: 500 13.5px/1.45 var(--mono); min-width: min(340px, 100%); width: 100%; resize: vertical; padding: 8px 10px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--text); box-sizing: border-box; }
+.it-edge.tu-trail .edge-path { stroke: var(--act); stroke-width: 3; opacity: 0.7; }
+.it-edge.tu-trail.old .edge-path { opacity: 0.3; }
