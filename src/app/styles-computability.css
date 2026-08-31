@@ -1,0 +1,48 @@
+/* ---- computability: machine boxes, lamps, verdict cards ---- */
+.it-region.mbox .region-box { stroke-width: 2; filter: drop-shadow(0 3px 7px rgba(20, 24, 50, 0.08)); }
+.it-region.mbox .region-text { font-size: 14px; fill: var(--text); }
+.it-region.mbox.hot .region-box { stroke: var(--hot); stroke-width: 3; }
+.it-region.mbox.good .region-box { stroke: var(--good); stroke-width: 3; }
+.it-region.mbox.bad .region-box { stroke: var(--bad); stroke-width: 3; }
+.it-region.mline .region-box { stroke: none; }
+.it-region.mline.hot .region-box { fill: var(--hot-soft); stroke: var(--hot); stroke-width: 1.5; }
+.it-region.mline.done .region-box { fill: color-mix(in srgb, var(--good) 9%, transparent); }
+.it-region.mline.bad .region-box { fill: var(--bad-soft); stroke: var(--bad); stroke-width: 1.5; }
+.it-text.mcode .free-text { font: 550 15px var(--font); fill: var(--text); }
+.it-text.mcode.mono .free-text { font-family: var(--mono); font-size: 14px; }
+.it-text.mcode.done .free-text { fill: var(--muted); }
+.it-text.mcode.hot .free-text { fill: var(--text); font-weight: 700; }
+.it-cell.mtag .cell-box { fill: var(--surface); stroke: var(--node-line); stroke-width: 1.2; }
+.it-cell.mtag .cell-text { font: 700 12px var(--font); fill: var(--muted); letter-spacing: 0.04em; }
+.it-cell.mtag.hot .cell-box { fill: var(--hot-soft); stroke: var(--hot); } .it-cell.mtag.hot .cell-text { fill: var(--hot-deep); }
+.it-cell.mtag.bad .cell-box { fill: var(--bad-soft); stroke: var(--bad); } .it-cell.mtag.bad .cell-text { fill: var(--bad); }
+.it-cell.lamp .cell-box { fill: var(--surface); stroke: var(--node-line); stroke-width: 1.6; }
+.it-cell.lamp .cell-text { font: 700 15px var(--font); fill: var(--muted); }
+.it-cell.lamp.off { opacity: 0.45; }
+.it-cell.lamp.good.lit .cell-box { fill: var(--good); stroke: var(--good); } .it-cell.lamp.good.lit .cell-text { fill: #fff; }
+.it-cell.lamp.bad.lit .cell-box { fill: var(--bad); stroke: var(--bad); } .it-cell.lamp.bad.lit .cell-text { fill: #fff; }
+.it-cell.lamp.hot.lit .cell-box { fill: var(--hot); stroke: var(--hot); } .it-cell.lamp.hot.lit .cell-text { fill: #1b1300; }
+.it-cell.lamp.lit .cell-box { filter: drop-shadow(0 0 8px color-mix(in srgb, var(--hot) 40%, transparent)); }
+:root[data-theme="dark"] .it-cell.lamp.good.lit .cell-text, :root[data-theme="dark"] .it-cell.lamp.bad.lit .cell-text { fill: #0e1120; }
+.it-edge.mflow .edge-path { stroke-width: 2.4; }
+.it-edge.mflow.soft .edge-path { stroke: var(--node-line); stroke-width: 1.6; }
+/* a card of text on the stage: an argument, a claim, a verdict */
+.it-cell.card .cell-box { fill: var(--surface); stroke: var(--border); stroke-width: 1.4; filter: drop-shadow(0 3px 8px rgba(20, 24, 50, 0.08)); }
+.it-cell.card .cell-text { font: 550 15px var(--font); fill: var(--text); }
+.it-cell.card.hot .cell-box { fill: var(--hot-soft); stroke: var(--hot); stroke-width: 2.4; }
+.it-cell.card.good .cell-box { fill: var(--good-soft); stroke: var(--good); stroke-width: 2.4; }
+.it-cell.card.bad .cell-box { fill: var(--bad-soft); stroke: var(--bad); stroke-width: 2.4; }
+.it-cell.card.act .cell-box { fill: var(--act-soft); stroke: var(--act); stroke-width: 2.4; }
+.it-cell.card.off { opacity: 0.4; }
+/* entries of the diagonal table */
+.it-cell.v-acc .cell-box { fill: var(--good-soft); } .it-cell.v-acc .cell-text { fill: var(--good); font-weight: 750; }
+.it-cell.v-rej .cell-box { fill: var(--bad-soft); } .it-cell.v-rej .cell-text { fill: var(--bad); font-weight: 750; }
+.it-cell.v-loop .cell-box { fill: var(--hot-soft); } .it-cell.v-loop .cell-text { fill: var(--hot-deep); font-weight: 750; }
+.it-cell.diag .cell-box { stroke: var(--act); stroke-width: 3; }
+.it-cell.flip .cell-box { stroke: var(--act); stroke-width: 3; fill: var(--act-soft); } .it-cell.flip .cell-text { fill: var(--act); font-weight: 800; }
+/* a bar for sizes (busy beavers, description lengths) */
+.it-cell.bar .cell-box { fill: color-mix(in srgb, var(--c1) 30%, var(--node)); stroke: var(--c1); }
+.it-cell.bar.hot .cell-box { fill: var(--hot-soft); stroke: var(--hot); }
+.it-cell.bar.good .cell-box { fill: var(--good-soft); stroke: var(--good); }
+.it-cell.bar.bad .cell-box { fill: var(--bad-soft); stroke: var(--bad); }
+.it-cell.bar .cell-text { font-size: 13px; }
