@@ -1,0 +1,6 @@
+/* ---- reductions, Rice, grammars: a ring round special strings in a language picture ---- */
+.it-cell.ring .cell-box { stroke: var(--act); stroke-width: 3.4; stroke-dasharray: none; }
+.it-cell.ring.good .cell-box { stroke: var(--act); stroke-width: 3.4; }
+/* a string not in the language */
+.it-cell.lout .cell-box { fill: var(--surface2); stroke-dasharray: 4 4; }
+.it-cell.lout .cell-text { fill: var(--muted); }
