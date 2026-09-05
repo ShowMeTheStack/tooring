@@ -1,0 +1,3 @@
+/* ---- beyond: busy-beaver tapes ---- */
+.it-cell.one .cell-box { fill: color-mix(in srgb, var(--c1) 22%, var(--node)); stroke: var(--c1); }
+.it-cell.one .cell-text { fill: var(--text); font-weight: 750; }
