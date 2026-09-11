@@ -1,0 +1,9 @@
+/* 3SAT → SUBSET SUM: zero digits fade back, rows not chosen fade out, the target row stands out */
+.it-cell.zero .cell-text { opacity: 0.38; }
+.it-cell.faded { opacity: 0.32; }
+.it-cell.targetrow .cell-box { fill: var(--surface2); stroke: var(--text); stroke-width: 2; }
+.it-cell.targetrow .cell-text { font-weight: 800; }
+/* 3SAT → 3-COLOUR: the out — F and out — B edges, run round the side channel as straight segments */
+.it-line.lane .plain-line { stroke: var(--edge); stroke-width: 2.1; stroke-linecap: round; }
+.it-line.lane.bad .plain-line { stroke: var(--bad); stroke-width: 4; }
+.it-line.lane.faded { opacity: 0.3; }

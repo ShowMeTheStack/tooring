@@ -1,0 +1,6 @@
+/* Reductions, part one: a picked or clashing literal vertex wins over its clause colour */
+.it-state.gnode.clause.bad .st-shape { fill: var(--bad-soft); stroke: var(--bad); stroke-width: 3.4; }
+.it-state.gnode.clause.hot .st-shape { fill: var(--hot-soft); stroke: var(--hot); stroke-width: 3.2; }
+.it-state.gnode.hot .st-shape { fill: var(--hot-soft); stroke: var(--hot); stroke-width: 3.2; }
+/* bigger vertex names for the reduction graphs, so they read at projector distance */
+.it-state.gnode.rbig .st-text { font-size: 17px; }
