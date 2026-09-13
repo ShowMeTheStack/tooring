@@ -1,0 +1,18 @@
+/* Space: the TQBF game tree (∃ blue, ∀ purple, values filled green or red) and the class map */
+.it-state.qe .st-shape { stroke: var(--c1); stroke-width: 2.6; }
+.it-state.qa .st-shape { stroke: var(--c4); stroke-width: 2.6; }
+.it-state.qe .st-text { fill: var(--c1); }
+.it-state.qa .st-text { fill: var(--c4); }
+.it-state.qnode.val-t .st-shape { fill: var(--good-soft); }
+.it-state.qnode.val-f .st-shape { fill: var(--bad-soft); }
+.it-state.qleaf.val-t .st-shape { stroke: var(--good); stroke-width: 2.6; }
+.it-state.qleaf.val-f .st-shape { stroke: var(--bad); stroke-width: 2.6; }
+.it-state.qleaf.val-t .st-text { fill: var(--good); }
+.it-state.qleaf.val-f .st-text { fill: var(--bad); }
+.it-state.qnode.unseen { opacity: 0.45; }
+.it-state.qnode.onpath .st-shape { stroke: var(--hot); stroke-width: 3; }
+.it-state.qnode.accept-path .st-shape { stroke: var(--good); stroke-width: 3.6; }
+.it-text.qe-text .free-text { fill: var(--c1); font-weight: 700; }
+.it-text.qa-text .free-text { fill: var(--c4); font-weight: 700; }
+.it-text.region-label .free-text { fill: var(--text); font-weight: 800; letter-spacing: 0.02em; }
+.it-region.gone-region { opacity: 0; }
