@@ -42,6 +42,7 @@
       ['Baysik', 'https://baysik.jyotiprakash.org', 'GW-BASIC and QBasic, with a debugger'],
       ['Lohgo', 'https://lohgo.jyotiprakash.org', 'Logo with turtle graphics and a debugger'],
       ['Kwery', 'https://kwery.jyotiprakash.org', 'a relational database you can see into, from SQL down to the pages'],
+      ['Sirkit', 'https://sirkit.jyotiprakash.org', 'digital design you can build, run and see inside, from gates to a small processor'],
       ['Strux', 'https://strux.jyotiprakash.org', 'data structures and algorithms animated from real C code'],
       ['NetSim', 'https://netsim.jyotiprakash.org', 'a network simulator you can watch packet by packet'],
     ],
