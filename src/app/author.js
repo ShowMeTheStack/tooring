@@ -43,6 +43,7 @@
       ['Lohgo', 'https://lohgo.jyotiprakash.org', 'Logo with turtle graphics and a debugger'],
       ['Kwery', 'https://kwery.jyotiprakash.org', 'a relational database you can see into, from SQL down to the pages'],
       ['Sirkit', 'https://sirkit.jyotiprakash.org', 'digital design you can build, run and see inside, from gates to a small processor'],
+      ['Sifer', 'https://sifer.jyotiprakash.org', 'cryptography you can see inside: every cipher, hash and curve opened up, from Enigma to post-quantum'],
       ['Strux', 'https://strux.jyotiprakash.org', 'data structures and algorithms animated from real C code'],
       ['NetSim', 'https://netsim.jyotiprakash.org', 'a network simulator you can watch packet by packet'],
     ],
